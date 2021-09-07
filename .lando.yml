@@ -1,0 +1,4 @@
+name: gbslices
+recipe: lamp
+config:
+  webroot: .
