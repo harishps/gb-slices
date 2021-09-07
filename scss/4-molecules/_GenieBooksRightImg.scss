@@ -1,0 +1,38 @@
+.GenieBooksRightImg {
+	position: relative;
+	z-index: 1;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	margin-bottom: 50px;
+	background-image: url(../images/genie-books-right-img.jpg);
+	background-color: #fff2dd;
+	.RightImg {
+		min-height: 640px;
+	}	
+	.RightText {
+		padding-right: 40px;		
+		p {
+			font-size: 20px;
+			font-weight: 500;
+			margin: 0 0 30px;
+			color:#707070;
+			line-height: 1.4;
+		}		
+		.IconSection {
+			@include TickIcon;
+			.EachIcon {
+				display: block;
+				width: 100%;
+				margin: 0 0 30px;
+				.Icon, .Text {
+					vertical-align: middle;
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
