@@ -1,7 +1,7 @@
 {
-  "name": "spicetribe",
+  "name": "GenieBooks",
   "version": "1.0.0",
-  "description": "spicetribe Website WordPress Theme",
+  "description": "GenieBooks Website WordPress Theme",
   "main": "gulp",
   "devDependencies": {
     "gulp": "^4.0.2",
