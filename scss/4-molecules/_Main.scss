@@ -1,0 +1,18 @@
+.v-middle {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $black;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-only(xs) {}
+  @include media-breakpoint-only(sm) {}
+  @include media-breakpoint-only(md) {}
+  @include media-breakpoint-only(lg) {}
+}
+

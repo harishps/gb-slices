@@ -1,0 +1,18 @@
+{
+  "name": "spicetribe",
+  "version": "1.0.0",
+  "description": "spicetribe Website WordPress Theme",
+  "main": "gulp",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "PS Harish",
+  "license": "ISC"
+}

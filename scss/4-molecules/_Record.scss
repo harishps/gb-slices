@@ -1,0 +1,22 @@
+.RecordBusiness {
+	padding: 100px 0;
+	background-color: rgba(160,225,219,0.2);
+	.RecordBusinessImg {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.RecordBusinessText {
+		h2 {
+			color: #2CBCAF;
+			font-size: 44px;
+			line-height: 1.2;
+			font-weight: 900;
+			margin: 0 0 20px;
+		}
+		p {
+			
+		}
+	}
+}
