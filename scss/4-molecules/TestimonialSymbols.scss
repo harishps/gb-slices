@@ -1,0 +1,32 @@
+.TestimonialSymbols {
+	background-color: #FFFDF8;
+	padding: 120px 0;
+	text-align: center;
+	position: relative;
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url(../images/testimonial-quite.svg) no-repeat 0 0;
+		content: "";
+		width: 230px;
+		height: 380px;
+		background-size: contain;
+	}
+	.TestimonialText {		
+		p {
+			font-size: 34px;
+			line-height: 1.4;
+			margin: 0 0 30px;
+			font-weight: 500;
+			color: #0E4154;
+		}
+		h5 {
+			font-size: 24px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: #0D717F;
+			margin: 0;
+		}
+	}
+}

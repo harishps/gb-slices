@@ -4,12 +4,13 @@
 }
 
 body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.2;
-  color: $black;
-  font-weight: 400;
   font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: $font-weight-normal;
+  margin: 0;
+  padding: 0;
+  color: $black;
   @include media-breakpoint-only(xs) {}
   @include media-breakpoint-only(sm) {}
   @include media-breakpoint-only(md) {}
@@ -25,7 +26,7 @@ body {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  font-family: helvetica, arial, verdana;
+  font-family: $font-family-sans-serif;
 }
 
 .jq-star {
