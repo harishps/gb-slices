@@ -90,6 +90,9 @@
   @include media-breakpoint-only(md) {
     margin-bottom: 80px;
   }
+   @include media-breakpoint-only(lg) {
+    margin-bottom: 120px;
+  }
 }
 @mixin BigPadding {
   padding: 0 0 150px 0;
