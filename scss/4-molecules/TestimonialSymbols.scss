@@ -3,6 +3,12 @@
 	padding: 120px 0;
 	text-align: center;
 	position: relative;
+	@include media-breakpoint-down(md) {
+    padding-bottom: 60px;
+  }
+  @include media-breakpoint-only(md) {
+    padding-bottom: 80px;
+  }
 	&:after {
 		position: absolute;
 		left: 0;
@@ -12,6 +18,18 @@
 		width: 230px;
 		height: 380px;
 		background-size: contain;
+		@include media-breakpoint-only(lg) {
+			width: 170px;
+		}
+		@include media-breakpoint-only(md) {
+			width: 140px;
+		}
+		@include media-breakpoint-only(sm) {
+			width: 110px;
+		}
+		@include media-breakpoint-only(xs) {
+			width: 80px;
+		}
 	}
 	.TestimonialText {		
 		p {
@@ -20,6 +38,21 @@
 			margin: 0 0 30px;
 			font-weight: 500;
 			color: #0E4154;
+			@include media-breakpoint-only(lg) {
+		  	font-size: 32px;
+		  }
+		  @include media-breakpoint-only(md) {
+		  	font-size: 28px;
+		  	margin-bottom: 20px;
+		  }
+			@include media-breakpoint-only(sm) {
+				font-size: 24px;
+				margin-bottom: 15px;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 22px;
+				margin-bottom: 15px;
+			}
 		}
 		h5 {
 			font-size: 24px;
@@ -27,6 +60,12 @@
 			font-weight: 400;
 			color: #0D717F;
 			margin: 0;
+			@include media-breakpoint-only(md) {
+		  	font-size: 22px;
+		  }
+			@include media-breakpoint-down(md) {
+				font-size: 18px;
+			}
 		}
 	}
 }

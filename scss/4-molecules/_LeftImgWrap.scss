@@ -18,10 +18,13 @@
   	padding: 30px 0 50px;
   }
   @include media-breakpoint-only(xs) {
-  	padding: 40px 0;
+  	padding: 0 0 40px 0;
   }
 	.LeftImg {
 		min-height: 530px;		
+		@media (min-width: 1300px) and (max-width: 1399.98px) {
+			min-height: 440px;
+		}
 		@include media-breakpoint-only(lg) {
 	  	background-position: 0 center;
 			background-repeat: no-repeat;
@@ -40,10 +43,11 @@
 			margin-bottom: 30px;
 	  }
 	  @include media-breakpoint-only(sm) {
-	  	min-height: 340px
+	  	min-height: 340px;
 	  }
 	  @include media-breakpoint-only(xs) {
-	  	min-height: 260px
+	  	min-height: 260px;
+	  	background-position: 0 top;
 	  }
 	}	
 	.LeftText {
@@ -106,13 +110,13 @@
   }
   @include media-breakpoint-down(lg) {
   	background-image: none;
-  	padding: 0 0 60px;
+  	// padding: 0 0 60px;
   }
   @include media-breakpoint-only(md) {
-  	padding: 0 0 50px;
+  	// padding: 0 0 50px;
   }
   @include media-breakpoint-only(xs) {
-  	padding: 0 0 40px 0;
+  	// padding: 0 0 40px 0;
   }
 	.LeftImg {
 		min-height: 920px;
@@ -120,22 +124,23 @@
 	  	background-position: 0 center;
 			background-repeat: no-repeat;
 			background-size: 100% auto;
-			background-image: url(../images/sarvesh-raut-proprietor-sarvesh-services.jpg);
-			min-height: 460px;
+			background-image: url(../images/company-thumbnail.jpg);
+			min-height: 570px;
 	  }
 	  @include media-breakpoint-down(lg) {
 	  	background-position: 0 center;
 			background-repeat: no-repeat;
 			background-size: 100% auto;
-			background-image: url(../images/sarvesh-raut-proprietor-sarvesh-services.jpg);
-			min-height: 310px;
+			background-image: url(../images/company-thumbnail.jpg);
+			min-height: 650px;
 			margin-bottom: 30px;
 	  }
 	  @include media-breakpoint-only(sm) {
-	  	min-height: 340px
+	  	min-height: 550px;
 	  }
 	  @include media-breakpoint-only(xs) {
-	  	min-height: 260px
+	  	min-height: 360px;
+	  	background-position: 0 top;
 	  }
 	}	
 	.LeftText {
