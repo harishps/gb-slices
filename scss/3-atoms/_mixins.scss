@@ -51,3 +51,30 @@
     }
   }
 }
+@mixin SmallMargin {
+  margin: 0 0 45px 0;
+}
+@mixin MediumMargin {
+  margin: 0 0 70px 0;
+}
+@mixin BigMargin {
+  margin: 0 0 150px 0;
+}
+@mixin SmallPadding {
+  padding: 0 0 45px 0;
+}
+@mixin MediumPadding {
+  padding: 0 0 70px 0;
+}
+@mixin BigPadding {
+  padding: 0 0 150px 0;
+}
+@mixin SmallPaddingBoth {
+  padding: 45px 0;
+}
+@mixin BigPaddingBoth {
+  padding: 150px 0;
+}
+@mixin MediumPaddingBoth {
+  padding: 70px 0;
+}

@@ -1,12 +1,12 @@
 .MainBanner {
 	position: relative;
-	margin-bottom: 50px;
+	@include MediumMargin; 
 	.BannerImg {
 		img {
 			width: 100%;
 			height: auto;
 		}
-	}
+	} 
 	.BannerTextWrap {
 		position: absolute;
 		left: 0;
@@ -21,6 +21,14 @@
 				margin: 0 0 20px;
 				color: $white;
 				font-weight: 900;
+			  @include media-breakpoint-only(md) {
+			  	font-size: 44px;
+			  	margin-bottom: 10px;
+				}
+			  @include media-breakpoint-only(lg) {
+			  	font-size: 52px;
+			  	margin-bottom: 10px;
+			  }
 			}
 			p {
 				font-size: 28px;
@@ -28,6 +36,12 @@
 				font-weight: 600;
 				margin: 0;
 				color: $white;
+				@include media-breakpoint-only(lg) {
+			  	font-size: 26px;
+			  }
+			  @include media-breakpoint-only(md) {
+			  	font-size: 22px;
+			  }
 			}
 		}
 	}
