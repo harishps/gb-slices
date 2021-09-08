@@ -29,6 +29,15 @@
 			  	font-size: 52px;
 			  	margin-bottom: 10px;
 			  }
+			  @include media-breakpoint-down(md) {
+			  	font-size: 32px;
+			  	margin-bottom: 8px;
+			  }
+			  br {
+					@include media-breakpoint-down(sm) {
+						display: none;
+					}
+				}
 			}
 			p {
 				font-size: 28px;
@@ -36,11 +45,19 @@
 				font-weight: 600;
 				margin: 0;
 				color: $white;
+				br {
+					@include media-breakpoint-down(md) {
+						display: none;
+					}
+				}
 				@include media-breakpoint-only(lg) {
 			  	font-size: 26px;
 			  }
 			  @include media-breakpoint-only(md) {
 			  	font-size: 22px;
+			  }
+			  @include media-breakpoint-down(md) {
+			  	font-size: 20px;
 			  }
 			}
 		}
