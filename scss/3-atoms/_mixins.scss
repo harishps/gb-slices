@@ -36,15 +36,24 @@
       display: inline-block;
       vertical-align: center;
       width: 55px;
+      @include media-breakpoint-down(md) {
+        width: 45px;
+      }
       img {
         max-width: 42px;
         height: auto;
+        @include media-breakpoint-down(md) {
+          max-width: 32px;          
+        }
       }
     }
     .Text {
       display: inline-block;
       vertical-align: center;
       width: calc(100% - 60px);
+      @include media-breakpoint-down(md) {
+        width: calc(100% - 50px);        
+      }
       p{
         font-size: 18px;
         line-height: 1.2;

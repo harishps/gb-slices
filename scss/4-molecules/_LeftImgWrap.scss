@@ -1,10 +1,10 @@
 .LeftImgStarWrap {
+	@include MediumMargin;
 	position: relative;
 	z-index: 1;
 	background-position: 0 center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
-	margin-bottom: 50px;
 	background-color: #2CBCAF;
 	background-image: url(../images/sarvesh-raut-proprietor-sarvesh-services.jpg);
   @include media-breakpoint-only(lg) {
@@ -101,17 +101,60 @@
 	background-size: 50% auto;
 	margin-bottom: 50px;
 	background-image: url(../images/company-thumbnail.jpg);
+	 @include media-breakpoint-only(lg) {
+  	background-image: none;
+  }
+  @include media-breakpoint-down(lg) {
+  	background-image: none;
+  	padding: 0 0 60px;
+  }
+  @include media-breakpoint-only(md) {
+  	padding: 0 0 50px;
+  }
+  @include media-breakpoint-only(xs) {
+  	padding: 0 0 40px 0;
+  }
 	.LeftImg {
 		min-height: 920px;
+		@include media-breakpoint-only(lg) {
+	  	background-position: 0 center;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-image: url(../images/sarvesh-raut-proprietor-sarvesh-services.jpg);
+			min-height: 460px;
+	  }
+	  @include media-breakpoint-down(lg) {
+	  	background-position: 0 center;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-image: url(../images/sarvesh-raut-proprietor-sarvesh-services.jpg);
+			min-height: 310px;
+			margin-bottom: 30px;
+	  }
+	  @include media-breakpoint-only(sm) {
+	  	min-height: 340px
+	  }
+	  @include media-breakpoint-only(xs) {
+	  	min-height: 260px
+	  }
 	}	
 	.LeftText {
-		padding-left: 80px;		
+		padding-left: 80px;	
+		@include media-breakpoint-only(lg) {
+	  	padding-left: 30px;
+		}
+		@include media-breakpoint-down(lg) {
+	  	padding-left: 0;
+		}	
 		p {
 			font-size: 20px;
 			font-weight: 500;
 			margin: 0 0 30px;
 			color:#707070;
 			line-height: 1.4;
+			@include media-breakpoint-down(lg) {
+				font-size: 18px;
+			}
 		}		
 		.IconSection {
 			@include TickIcon;
@@ -123,6 +166,9 @@
 					vertical-align: middle;
 					p {
 						font-size: 20px;
+						@include media-breakpoint-down(lg) {
+							font-size: 18px;
+						}
 					}
 				}
 			}
