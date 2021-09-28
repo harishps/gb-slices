@@ -1,11 +1,11 @@
 .ImageTitleText {
-  .Image {
+  .ImageWrap {
     @include BigPaddingBoth;
     position: relative;    
     img {
       max-width: 100%;
       height: auto;
-    }
+    }    
   }
   .Text {
     h2 {
@@ -35,7 +35,7 @@
       background-color: $LeftImgBG;
       z-index: -1;
     }
-    .Image {
+    .ImageWrap {
       position: relative;
       &:before {
         position: absolute;
@@ -46,6 +46,23 @@
         content: "";
         background-color: $LeftImgBG;
         z-index: -1;
+      }  
+      .Image {
+        position: relative;
+        z-index: 9;
+
+        &:before {
+          position: absolute;
+          width: 425px;
+          height: 112%;
+          left: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "";
+          border: 2px dashed $RightImgBG;
+          border-right: none;
+          z-index: -1;
+        }
       }
     }
     .Text {
@@ -66,7 +83,7 @@
       z-index: -1;
     }
 
-    .Image {
+    .ImageWrap {
       position: relative;
       &:before {
         position: absolute;
@@ -77,6 +94,23 @@
         content: "";
         background-color: $RightImgBG;
         z-index: -1;
+      }
+      .Image {
+        position: relative;
+        z-index: 9;
+
+        &:before {
+          position: absolute;
+          width: 425px;
+          height: 112%;
+          right: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "";
+          border: 2px dashed $LeftImgBG;
+          border-left: none;
+          z-index: -1;
+        }
       }
     }
 
