@@ -1,0 +1,91 @@
+.ImageTitleText {
+  .Image {
+    @include BigPaddingBoth;
+    position: relative;    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .Text {
+    h2 {
+      font-size: 31px;
+      font-weight: 800;
+      margin: 0 0 25px;
+      color: $ImgTitle;
+      line-height: 38px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      color: $ImgDesc;
+      line-height: 30px;      
+    }
+  } 
+  &.LeftImg {
+    position: relative;
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 34%;
+      height: 100%;
+      content: "";
+      background-color: $LeftImgBG;
+      z-index: -1;
+    }
+    .Image {
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        content: "";
+        background-color: $LeftImgBG;
+        z-index: -1;
+      }
+    }
+    .Text {
+      padding-left: 80px;
+    }
+  }
+  &.RightImg {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 34%;
+      height: 100%;
+      content: "";
+      background-color: $RightImgBG;
+      z-index: -1;
+    }
+
+    .Image {
+      position: relative;
+      &:before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        content: "";
+        background-color: $RightImgBG;
+        z-index: -1;
+      }
+    }
+
+    .Text {
+      text-align: right;
+      padding-right: 115px;
+      h2 {
+        color: #FFDEAB;
+      }
+    }
+  }
+}
