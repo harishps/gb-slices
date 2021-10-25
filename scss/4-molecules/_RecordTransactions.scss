@@ -1,80 +1,79 @@
 .RecordTransactions {
-	@include MediumMargin;
-	position: relative;
-	&:after {
-		position: absolute;
-		right: 0;
-		width: 70vw;
-		height: 100%;
-		content: "";
-		background-color: #2CBCAF;
-		top: 0;
-		z-index: -1;
-		@include media-breakpoint-only(md) {
-			width: 100%;
-			height: 75%;
-			top: 25%;
-		}
-		@include media-breakpoint-only(xs) {
-			width: 100%;
-			height: 90%;
-			top: 10%;
-		}
-		@include media-breakpoint-only(sm) {
-			width: 100%;
-			height: 85%;
-			top: 15%;
-		}
-	}
-	.RecordTransactionsImg {
-		@include media-breakpoint-down(lg) {
-			text-align: center;
-		}
-		img {
-			max-width: 95%;
-			height: auto;
-			@include media-breakpoint-down(lg) {
-				max-width: 85%;
-			}
-		}
-	}
-	.RecordTransactionsText {
-		@include BigPaddingBoth;
-		h2 {
-			font-size: 60px;
-			line-height: 1.2;
-			margin: 0 0 20px;
-			color: $white;
-			font-weight: 900;
-			@include media-breakpoint-only(md) {
-		  	font-size: 44px;
-		  	margin-bottom: 10px;
-			}
-		  @include media-breakpoint-only(lg) {
-		  	font-size: 52px;
-		  	margin-bottom: 10px;
-		  }
-		  @include media-breakpoint-down(md) {
-		  	font-size: 32px;
-		  	margin-bottom: 8px;
-		  }
-		  br {
-				@include media-breakpoint-down(sm) {
-					display: none;
-				}
-			}
-		}
-		p {
-			font-size: 20px;
-			line-height: 1.4;
-			font-weight: 400;
-			margin: 0 0 30px;
-			color: #146A8B;
-		}
-		.CTA {
-			a {
-				@include primary-cta;
-			}
-		}
-	}
+  position: relative;
+  &:after {
+    position: absolute;
+    right: 0;
+    width: 70vw;
+    height: 100%;
+    content: "";
+    background-color: #2CBCAF;
+    top: 0;
+    z-index: -1;
+    @include media-breakpoint-only(md) {
+      width: 100%;
+      height: 75%;
+      top: 25%;
+    }
+    @include media-breakpoint-only(xs) {
+      width: 100%;
+      height: 90%;
+      top: 10%;
+    }
+    @include media-breakpoint-only(sm) {
+      width: 100%;
+      height: 85%;
+      top: 15%;
+    }
+  }
+  .RecordTransactionsImg {
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+    img {
+      max-width: 95%;
+      height: auto;
+      @include media-breakpoint-down(lg) {
+        max-width: 85%;
+      }
+    }
+  }
+  .RecordTransactionsText {
+    @include BigPaddingBoth;
+    h2 {
+      font-size: 60px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      color: $white;
+      font-weight: 900;
+      @include media-breakpoint-only(md) {
+        font-size: 44px;
+        margin-bottom: 10px;
+      }
+      @include media-breakpoint-only(lg) {
+        font-size: 52px;
+        margin-bottom: 10px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+      br {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 400;
+      margin: 0 0 30px;
+      color: #146A8B;
+    }
+    .CTA {
+      a {
+        @include primary-cta;
+      }
+    }
+  }
 }
